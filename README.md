@@ -1,15 +1,15 @@
 #go to the project directory
 
-cd yalantis
+```cd yalantis```
 
 #install django
 
-pip install django
+```pip install django```
 
 #install rest-framework
 
-pip install djangorestframework
+```pip install djangorestframework```
 
 #in command line 
 
-py manage.py runserver
+```py manage.py runserver```
