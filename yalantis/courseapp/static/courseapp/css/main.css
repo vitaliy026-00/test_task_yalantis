@@ -127,3 +127,8 @@ main .features h1 {
     text-align: center;
     width: 75%;
 }
+.error{
+    font-size: 25px;
+    margin-right: 25px;
+    color: red;
+}

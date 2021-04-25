@@ -12,7 +12,7 @@
             {{ form.count_of_lc }}
             {{ form.date_start }}
             {{ form.date_end }}
-            <span>{{ error }}</span>
+            <p class="error">{{ error }}</p>
             <button class="btn btn-success" type="submit">Submit Course</button>
             <a href="{% url 'course_start' %}" class="create_1 btn btn-danger">Back</a
         </form>
