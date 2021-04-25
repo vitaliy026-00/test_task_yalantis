@@ -1,5 +1,7 @@
 # Test task for Yalantis  School
 
+## Instalation
+
 Go to the project directory
 
 ```cd yalantis```
