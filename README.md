@@ -10,6 +10,10 @@ Install rest-framework
 
 ```pip install djangorestframework```
 
+Install djangorestframework-jsonapi
+
+```pip install djangorestframework-jsonapi```
+
 In command line 
 
-```py manage.py runserver```
+```python3 manage.py runserver```
