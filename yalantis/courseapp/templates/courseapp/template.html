@@ -1,0 +1,31 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block titletext %}{% endblock %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="{% static 'courseapp/css/main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <a href="{% url 'course_start' %}"><li><i class="fas fa-home"></i>All Courses</li></a>
+                <a href="{% url 'create-course' %}"><li><i class="fas fa-home"></i>Create Course</li></a>
+
+            </ul>
+            </div>
+    </header>
+    <main>
+        {% block mainpageinfo %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

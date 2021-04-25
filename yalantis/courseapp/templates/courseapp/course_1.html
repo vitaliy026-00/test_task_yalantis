@@ -1,0 +1,26 @@
+{% extends 'courseapp/template.html' %}
+{% block titletext %}
+<title>Courses</title>
+{% endblock %}
+<body>
+    {% block mainpageinfo %}
+    <form class="form_1" action="">
+        <input class="arch_2" type="search" placeholder="Search" aria-label="Search " name="search">
+        <button class="arch_1 btn btn-online-success">Search</button>
+        <a href="{% url 'course_start' %}" class="arch_3 btn btn-warning">Back</a>
+    </form>
+    <div class="features">
+        <h1 class="fon">Courses</h1>
+            {% for el in post %}
+            <div class="name_2">
+                <h3>{{ el.name }}</h3>
+                <p>Count of lectures: {{ el.count_of_lc }}</p>
+                <a href="{% url 'course-number' el.id %}" class="btn btn-warning">Course Details</a>
+            </div>
+            {% endfor %}
+    {% endblock %}
+
+
+    </div>
+
+</body>

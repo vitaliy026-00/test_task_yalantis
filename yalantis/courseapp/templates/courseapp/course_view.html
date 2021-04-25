@@ -1,0 +1,20 @@
+{% extends 'courseapp/template.html' %}
+{% block titletext %}
+<title>{{ course.name }}</title>
+{% endblock %}
+<body>
+    {% block mainpageinfo %}
+    <div class="features">
+        <h1 class="name_1">Name of course: {{ course.name }}</h1>
+        <div class="other_1">
+            <p class="">Date of start:  {{ course.date_start }} </p>
+            <p>Date of end: {{ course.date_end }}</p>
+            <p>Count of lectures: {{ course.count_of_lc }}</p>
+            <a href="{% url 'course-delete' course.id %}" class="btn btn-danger">Delete</a>
+            <a href="{% url 'course-update' course.id %}" class="btn btn-danger">Update</a>
+            <a href="{% url 'course_start' %}" class="btn btn-danger">Back</a>
+        </div>
+    </div>
+    {% endblock %}
+
+</body>

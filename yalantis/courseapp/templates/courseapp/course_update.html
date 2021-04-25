@@ -1,0 +1,22 @@
+{% extends 'courseapp/template.html' %}
+{% block titletext %}
+<title>Updating Course</title>
+{% endblock %}
+<body>
+    {% block mainpageinfo %}
+    <div class="feature_3">
+        <h1>Form for updating course</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.name }}
+            {{ form.count_of_lc }}
+            {{ form.date_start }}
+            {{ form.date_end }}
+            <button class="btn btn-success" type="submit">Update Course</button>
+            <a href="{% url 'course_start' %}" class="btn btn-success">Назад</a>
+        </form>
+    </div>
+    {% endblock %}
+
+
+</body>

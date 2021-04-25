@@ -1,0 +1,22 @@
+{% extends 'courseapp/template.html' %}
+{% block titletext %}
+<title>Deleting Course</title>
+{% endblock %}
+<body>
+    {% block mainpageinfo %}
+    <div class="feature_2">
+        <h1>Deleting Course</h1>
+        <form method="post">
+            {% csrf_token %}
+            <h3>{{ course.name }}</h3>
+            <p class="">Date of start:  {{ course.date_start }} </p>
+            <p>Date of end: {{ course.date_end }}</p>
+            <p>Count of lectures: {{ course.count_of_lc }}</p>
+            <button class="btn btn-success" type="submit">Delete Course</button>
+            <a href="{% url 'course_start' %}" class="btn btn-success">Back</a>
+        </form>
+    </div>
+    {% endblock %}
+
+
+</body>

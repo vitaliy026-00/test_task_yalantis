@@ -1,0 +1,22 @@
+[
+  {
+    "model": "courseapp_course",
+    "pk": 1,
+    "fields": {
+        "name": "Python course",
+        "count_of_lc": 11,
+        "date_start": "2021-06-10",
+        "date_end": "2021-08-25"
+      }
+  },
+  {
+    "model": "courseapp_course",
+    "pk": 2,
+    "fields": {
+        "name": "JS course",
+        "count_of_lc": 18,
+        "date_start": "2021-06-16",
+        "date_end": "2021-08-31"
+      }
+  }
+]
